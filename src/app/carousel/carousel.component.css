@@ -1,0 +1,139 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+.my-slider {
+    width: 800px;
+    margin: 0px auto;
+    margin-bottom: 2% !important;
+    background: #000;
+}
+
+.box {
+    width: 80px;
+    height: 350px;
+    background: #ffc119;
+    float: left
+}
+
+.mybtn {
+    background: #ffc119 !important
+}
+
+.left {
+    position: absolute;
+    right: 0;
+}
+
+.my-inner {
+    width: 600px;
+    height: 350px;
+    position: relative;
+    float: left;
+    padding: 3px;
+    overflow: hidden
+}
+
+.my-inner:hover .caption {
+    bottom: 0;
+}
+
+.img {
+    width: 100%;
+    height: 349px;
+}
+
+.items {
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.active {
+    display: inline-block;
+    opacity: 1;
+}
+
+.next,
+.prev {
+    position: relative;
+    float: left;
+    margin-top: 120px;
+    cursor: pointer;
+    font-size: 300%;
+    color: #fff;
+    text-align: center;
+    padding-left: 15px
+}
+
+.caption {
+    width: 100%;
+    height: 50px;
+    background: rgba(52, 73, 94, .6);
+    position: absolute;
+    bottom: -50px;
+    left: -1px;
+    transition: .3s bottom linear
+}

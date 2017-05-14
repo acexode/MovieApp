@@ -1,0 +1,8 @@
+.panel-default {
+    margin-top: 2%;
+}
+
+.panel-body {
+    height: 940px !important;
+    overflow: hidden
+}

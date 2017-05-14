@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
     })
   }
   search() {
+    this.router.navigate(['/search', this.movie])
     console.log(this.movie)
   }
 

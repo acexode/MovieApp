@@ -13,9 +13,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" [(ngModel)]="movie" name="movie" placeholder="Search">
+                        <input type="text" #name class="form-control" [(ngModel)]="movie" name="movie" placeholder="Search">
                     </div>
-                    <a routerLink="/search/movie" class="btn btn-default">Submit</a>
+                    <a routerLink="/search/name" class="btn btn-default">Submit</a>
                 </form>
             </ul>
         </div>

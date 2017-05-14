@@ -18,6 +18,10 @@ const appRoutes: Routes = [
     {
         path: 'genre/:name',
         component: GenreComponent
+    },
+    {
+        path: '/search',
+        component: GenreComponent
     }
 ];
 

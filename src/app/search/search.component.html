@@ -6,13 +6,11 @@
         <div class="panel-body">
 
             <div *ngFor="let list of Results; let i=index" style="height:300px;" class="col-md-4 col-sm-3">
-                <div *ngIf="i < 9">
-                    <img class="thumbnail" *ngIf="list.poster_path" src="http://image.tmdb.org/t/p/w500/{{list.backdrop_path}}" alt=" ">
-                    <h4>{{list.title}}</h4>
-                    <p>{{list.release_date}}</p>
-                    <p><a routerLinkActive="active-link" class="btn   btn-primary" routerLink="/movie/{{list.id}}">View details</a></p>
-                </div>
 
+                <img class="thumbnail" *ngIf="list.poster_path" src="http://image.tmdb.org/t/p/w500/{{list.backdrop_path}}" alt=" ">
+                <h4>{{list.title}}</h4>
+                <p>{{list.release_date}}</p>
+                <p><a routerLinkActive="active-link" class="btn   btn-primary" routerLink="/movie/{{list.id}}">View details</a></p>
             </div>
         </div>
     </div>

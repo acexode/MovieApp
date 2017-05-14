@@ -5,6 +5,7 @@ import { SingleComponent } from './single/single.component';
 import { MovieComponent } from './movie/movie.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { GenreComponent } from './genre/genre.component';
+import { SearchComponent } from './search/search.component';
 const appRoutes: Routes = [
     {
         path: '',
@@ -20,8 +21,8 @@ const appRoutes: Routes = [
         component: GenreComponent
     },
     {
-        path: '/search',
-        component: GenreComponent
+        path: 'search',
+        component: SearchComponent
     }
 ];
 

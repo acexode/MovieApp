@@ -21,7 +21,7 @@ const appRoutes: Routes = [
         component: GenreComponent
     },
     {
-        path: 'search',
+        path: 'search/:name',
         component: SearchComponent
     }
 ];

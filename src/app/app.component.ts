@@ -23,9 +23,7 @@ export class AppComponent implements OnInit {
      //console.log(this.genreResults)
     })
   }
-  search() {
-    this.service.search(this.movie).subscribe(res => this.Results = res.results);
-  }
+  
 
   getGenre(genre: any) {
    const title = genre.innerText;

@@ -20,35 +20,11 @@ export class AppComponent implements OnInit {
     this.service.genreId().subscribe((res) => {
       const arr = [];
      arr.push(res)
-     this.genreResults = arr[0].genres
-     //console.log(this.genreResults)
-    })
+     this.genreResults = arr[0].genres;
+   });
   }
   search() {
-    this.router.navigate(['/search', this.movie])
-    console.log(this.movie)
+    this.router.navigate(['/search', this.movie]);
+    console.log(this.movie);
   }
-
-  getGenre(genre: any) {
-   const title = genre.innerText;
-
-   console.log(title);
-   /* this.service.genreId().subscribe((res) => {
-     const list = [];
-     list.push(...res.genres);
-     const one = list.filter((data) => {
-       if (data.name === title) {
-        return data;
-       }
-     });
-     const id = [];
-     id.push(...one);
-     const x = id[0].id;
-     console.log(x)
-      this.service.getGenres(x).subscribe(res => console.log(res.results))
-   });*/
-  }
-
-
-
 }
